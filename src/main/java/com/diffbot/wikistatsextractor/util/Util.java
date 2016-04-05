@@ -637,6 +637,10 @@ public class Util {
 				output.append(c);
 			}
 		}
+		char c = s.charAt(len-1);
+		if (c != '[' && c != ']' && nb_brackets == 0) {
+			output.append(c);
+		}
 		return output.toString();
 	}
 
